@@ -1,0 +1,284 @@
+/* Para Teléfonos Móviles: */
+[class*="col-"] {
+    width: 100%;
+
+}
+
+@media only screen and (min-width: 600px) {
+    /* Para Tablets: */
+
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+    /* Para Escritorio: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+//colores
+$bg: linear-gradient(to left, #804000, #FFFFD1, #804000, );
+//
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: inline-block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+//estilo del header
+.contenedor {
+    background: $bg;
+    color: black;
+    margin: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    padding: 0;
+}
+
+//diseño de logo 
+.imgss {
+    margin-top: 0.1rem;
+    margin-left: 1rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+}
+
+@media (max-width:768px) {
+    .imgss {
+        margin-top: 0.1rem;
+        margin-left: 2rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 0.5rem;
+        opacity: 0.7;
+        margin-bottom: 1rem;
+    }
+}
+
+//estilo de letra de header
+.letra {
+    font-family: x-small;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    margin-top: -4rem;
+}
+@media (max-width:768px) {
+    .letra {
+
+        font-family: x-small;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        margin-top: -4.5rem;
+        margin-left: 7rem;
+    }
+}
+
+//diseño del producto
+.prod {
+    padding: 1rem;
+    width: 25rem;
+    height: 25rem;
+    margin: 3rem;
+    margin-top: -3rem;
+    margin-bottom: -1rem;
+
+}
+
+@media (max-width:768px) {
+    .prod {
+        justify-content: center;
+        margin-left:2rem;
+        width: 16rem;
+        height: 16rem;
+    }
+}
+//diseño de las letras de descuento.
+#desc {
+    font-size: 4rem;
+    font-family: x-small;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: -2rem;
+    background: url(img/globo.jpg);
+}
+
+@media (max-width:768px) {
+    #desc {
+        font-size: 2rem;
+        font-family: x-small;
+        justify-content: center;
+        text-align: center;
+        margin-top: -1.3rem;
+    }
+
+    #diez {
+        font-size: 2rem;
+        font-family: x-small;
+        text-align: center;
+
+    }
+}
+
+#contenido {
+    font-size: 2.5rem;
+    font-family: x-small;
+    justify-content: center;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+@media (max-width:768px) {
+    #contenido {
+        font-size: 1.5rem;
+        font-family: x-small;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+//diseño del boton
+.button {
+    border-bottom: solid;
+}
+
+.button:hover {
+    background: $bg
+}
+
+.boton-letra {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-family: x-small;
+}
+
+//diseñ del footer
+.tex-footer{
+    text-align: center;
+    background:$bg;
+    border-radius: 2rem;
+    width: 97%;
+    margin: 1rem;
+
+}
+@media (max-width:768px) {
+    .tex-footer{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0.5rem;
+      
+    }
+}
+
+//letras del formulARIO
+.letrass{
+    font-size: 2rem;
+    color: #07120D;
+    background: #ffffff;
+}
+
+//animaciones
